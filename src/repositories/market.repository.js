@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { config } from '../config/config.js';
 
-const COINGECKO_BASE_URL = 'https://api.coingecko.com/api/v3';
-const ALPHA_VANTAGE_BASE_URL = 'https://www.alphavantage.co/query';
+const COINGECKO_BASE_URL = config.coinGeckoBaseUrl;
+const ALPHA_VANTAGE_BASE_URL = config.alphaVantageBaseUrl;
 
 
 export const getCryptoPrice = async (coinIds) => {
