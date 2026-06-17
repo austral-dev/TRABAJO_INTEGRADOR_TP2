@@ -56,6 +56,16 @@ Authorization: Bearer {{loginRequest.response.body.token}}
     "message": "¿Quién ganó el mundial 2022?"
 }
 
+### Estrategia de inversión a largo plazo
+POST {{baseUrl}}/chat
+Content-Type: application/json
+Authorization: Bearer {{loginRequest.response.body.token}}
+
+{
+    "message": "¿Cuál sería una buena estrategia de inversión a largo plazo combinando acciones y criptomonedas?"
+}
+
+
 ### Obtener todos los chats
 GET {{baseUrl}}/history
 Authorization: Bearer {{loginRequest.response.body.token}}
